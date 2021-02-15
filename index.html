@@ -4,29 +4,41 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Rajdhani:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/style.css">
   <title>Rock Papper Scissors</title>
 </head>
 <body>
   <div class="wrapper">
-    <h1 class="title">Rock Papper Scissors</h1>
-    <h3><small>(MAN vs. MACHINE)</small></h3>
-
-    <hr>
-
+    <div class="intro">
+      <h1 class="title">Rock Papper Scissors</h1>
+      <h3><small>(MAN vs. MACHINE)</small></h3>
+    </div>
     <h2>Choose your weapon:</h2>
     <div class="weapons">
-      <ul>
-        <li><button>Rock</button></li>
-        <li><button>Papper</button></li>
-        <li><button>Scissors</button></li>
-      </ul>
+      <div id="rock" class="button">
+        <img src="./assets/images/rock.svg" alt="Rock">
+      </div>
+
+      <div id="paper" class="button">
+        <img src="./assets/images/paper.svg" alt="Paper">
+      </div>
+
+      <div id="scissor" class="button">
+        <img src="./assets/images/scissor.svg" alt="Scissor">
+      </div>
     </div>
 
-    <div class="score">
-      <span>MAN: </span><span>0</span>
-      <span>x</span>
-      <span>MACHINE: </span><span>0</span>
-    </div>
+      <div class="score-label">
+        <div class="label">YOU</div>
+        <div class="label">MACHINE</div>
+      </div>
+
+      <div class="score-counter">
+        <div id="player-score" class="score">0</div>
+        <div id="machine-score" class="score">0</div>
+      </div>
 
     <div class="log">
       <p>Log</p>
