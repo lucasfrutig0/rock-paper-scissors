@@ -78,6 +78,13 @@ h2 {
   justify-content: center;
   align-items: center;
   border: 1px solid #efefef;
+  transition: all 0.3s ease-in-out;
+}
+
+.button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px 1px rgba(255, 255, 255, 0.3);
+  cursor: pointer;
 }
 
 .score-label {
@@ -99,4 +106,10 @@ h2 {
 .score-counter {
   display: flex;
   justify-content: center;
+}
+
+.log {
+  padding: 2rem;
+  border: 1px solid white;
+  text-align: center;
 }
